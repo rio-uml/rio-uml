@@ -40,7 +40,6 @@
     </head>
 
     <body>
-
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -65,28 +64,48 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Milestones</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav ms-auto py-0">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Project Scope
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-top: 0;">
+                                        <li><a class="dropdown-item" href="#literature-survey">Literature Survey</a></li>
+                                        <li><a class="dropdown-item" href="#research-gap">Research Gap</a></li>
+                                        <li><a class="dropdown-item" href="#research-problem">Research Problem</a></li>
+                                        <li><a class="dropdown-item" href="#research-objectives">Research Objectives</a></li>
+                                        <li><a class="dropdown-item" href="#methodology">Methodology</a></li>
+                                        <li><a class="dropdown-item" href="#technologies">Technologies</a></li>
+                                    </ul>
+                                </li>
+                                <a href="#milestones" class="nav-item nav-link">Milestones</a>                                
+                                <a href="#documents" class="nav-item nav-link">Documents</a>
+                                <a href="#presentations" class="nav-item nav-link">Presentations</a>
+                                <a href="#about" class="nav-item nav-link">About Us</a>
+                                <a href="#contact" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </nav>
 
 
             <!-- Hero Header Start -->
-            <div class="hero-header overflow-hidden px-5">
+            <div class="hero-header overflow-hidden px-5" id="Home">
                 <div class="rotate-img">
                     <img src="img/sty-1.png" class="img-fluid w-100" alt="">
                     <div class="rotate-sty-2"></div>
                 </div>
-                <div class="row gy-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <h1 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">AI UML Magic & Design Pattern Wizardry</h1>
-                        <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Ready to revolutionize your software development? Click 'Get Started' to unlock the power of Diagramly: Your gateway to AI-driven UML mastery and seamless design pattern integration!</p>
-                    </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-                        <img src="img/hero-img.png" class="img-fluid w-100 h-100" alt="">
-                    </div>
+            <div class="row gy-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <h1 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">AI UML Magic & Design Pattern Wizardry</h1>
+                    <p class="fs-4 mb-4 wow fadeInUp" data-wow-delay="0.5s">Ready to revolutionize your software development? Click 'Get Started' to unlock the power of Diagramly: Your gateway to AI-driven UML mastery and seamless design pattern integration!</p>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <img src="img/hero-img.png" class="img-fluid w-100 h-100" alt="">
+                </div>
                 </div>
             </div>
             <!-- Hero Header End -->
@@ -94,8 +113,8 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- About Start -->
-        <div class="container-fluid overflow-hidden py-5"">
+        <!-- Literature Survey -->
+        <div class="container-fluid overflow-hidden py-5" id="literature-survey">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -120,7 +139,7 @@
         <!-- About End -->
 
         <!-- Research Gap -->
-        <div class="container-fluid feature overflow-hidden">
+        <div class="container-fluid feature overflow-hidden" id="research-gap">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
                     <h1 class="display-5 mb-4">Research Gap</h1>
@@ -181,7 +200,8 @@
             </div>
         </div>
 
-        <div class="container text-center">
+        <!-- Research Problem & Soluction -->
+        <div class="container text-center" id="research-problem">
             <h1 class="display-5 mb-4">Research Problem & Solution</h1> 
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -222,113 +242,117 @@
                 </div>
             </div>
         </div>
-        
-        
         <!-- Research Gap End -->
-        <!-- Service Start -->
-        <div class="container-fluid service">
+        
+        
+        <!-- Research Objectives Start -->
+		<div id="research-objectives" class="sub-section">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
-                    <h4 class="mb-1 text-primary">Our Service</h4>
-                    <h1 class="display-5 mb-4">What We Can Do For You</h1>
-                    <p class="mb-0">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.
-                    </p>
+              <h2 class="pb-5 pt-5 text-center mb-5 display-5">Research Objectives</h2>
+              <!-- First Content Section-->
+              <div class="row align-items-center connecting-lines d-flex">
+                <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
                 </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-mail-bulk fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Email Newsletters</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-thumbs-up fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Acquistion Emails </h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fa fa-subway fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Retention Emails</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-sitemap fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Promotional Emails</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-mail-bulk fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Email Newsletters</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-thumbs-up fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Acquistion Emails </h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fa fa-subway fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Retention Emails</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item text-center rounded p-4">
-                            <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-sitemap fa-5x text-secondary"></i></div>
-                            <div class="service-content">
-                                <h4 class="mb-4">Promotional Emails</h4>
-                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.consectetur adipisicing elit
-                                </p>
-                                <a href="#" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-6">
+                  <h4>Generating User Stories</h4>
+                  <p style="text-align: justify;">The first objective of this study is to automatically generate template-based individual user stories to accurately capture client needs.​
+                  </p>
                 </div>
+              </div>
+
+              <!-- Path Line -->
+              <div class="row timeline_s">
+                <div class="col-2">
+                  <div class="corner top-right"></div>
+                </div>
+                <div class="col-8">
+                  <hr/>
+                </div>
+                <div class="col-2">
+                  <div class="corner left-bottom"></div>
+                </div>
+              </div>
+
+              <!-- Second Content Section-->
+              <div class="row align-items-center justify-content-end connecting-lines d-flex">
+                <div class="col-6 text-right">
+                  <h4>Generating Use Case Diagram</h4>
+                  <p style="text-align: justify;">The second objective of this study is to develop a solution to Generating a complete and accurate use case diagram through generated user stories.​</p>
+                </div>
+                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
+                </div>
+              </div>
+
+              <!-- Path Line -->
+              <div class="row timeline_s">
+                <div class="col-2">
+                  <div class="corner right-bottom"></div>
+                </div>
+                <div class="col-8">
+                  <hr/>
+                </div>
+                <div class="col-2">
+                  <div class="corner top-left"></div>
+                </div>
+              </div>
+
+              <!-- Third Content Section -->
+              <div class="row align-items-center connecting-lines d-flex">
+                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
+                </div>
+                <div class="col-6">
+                  <h4>Generating Class Diagram</h4>
+                  <p style="text-align: justify;">
+                    The third objective is Creating a complete and accurate class diagram that will illustrate the structure of the software based on client requirements.
+                  </p>
+                </div>
+              </div>
+               <!-- Path Line -->
+    
+              <div class="row timeline_s">
+                <div class="col-2">
+                  <div class="corner top-right"></div>
+                </div>
+                <div class="col-8">
+                  <hr/>
+                </div>
+                <div class="col-2">
+                  <div class="corner left-bottom"></div>
+                </div>
+              </div>
+
+              <!-- Fourth Content Section-->
+              <div class="row align-items-center justify-content-end connecting-lines d-flex">
+                <div class="col-6 text-right">
+                  <h4>Generating Code according to design pattern</h4>
+                  <p style="text-align: justify;">The fourth objective is to Identifying the most suitable design pattern according to the class diagram and auto-generating the related skeleton code.​</p>
+                </div>
+                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold"><i class="fa fa-star"></i></div>
+                </div>
+              </div>
+
+              <!-- Path Line -->
+              <div class="row timeline_s">
+                <div class="col-2">
+                  <div class="corner right-bottom"></div>
+                </div>
+                <div class="col-8">
+                  <hr/>
+                </div>
+                <div class="col-2">
+                  <div class="corner top-left"></div>
+                </div>
+              </div>
             </div>
         </div>
-        <!-- Service End -->
+        <!-- Research Objectives End -->        
 
-        <div id="methodology" class="sub-section">
+        <!-- Methodology Start -->  
+        <div id="methodology" class="sub-section" style="margin-top: 100px;">
             <h1 class="display-5 mb-4 text-center text-black">Methodology</h1>
             <div class="row">
                 <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
@@ -361,134 +385,142 @@
                 </div>
             </div>
         </div>
+        <!-- Methodology End -->  
 
-             <!-- Milestones -->
-      <section id="milestones" class="main-sections" >
-        <div class="container">
-            <h5 class="section-headings">Milestones</h5>
-            <div class="sub-section">
-                <h2>Timeline in Brief</h2>
-                <div class="milestones">
-                  <ul class="timeline">
-                    <!-- Project Proposal -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">August 2023</p>
-                        <h3>Proposal Presentation & Report</h3>
-                        <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
-                        <p><strong>Marks Allocated : </strong>12</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">12%</div>
+        <!-- Milestones Start -->
+        <section id="milestones" class="main-sections">
+            <div class="container">
+                <h5 class="section-headings">Milestones</h5>
+                <div class="sub-section">
+                    <h2>Timeline in Brief</h2>
+                    <div class="milestones">
+                    <ul class="timeline">
+                        <!-- Project Proposal -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">August 2023</p>
+                            <h3>Proposal Presentation & Report</h3>
+                            <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
+                            <p><strong>Marks Allocated : </strong>12</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">12%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                    <!-- Progress Presentation I -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">November 2023</p>
-                        <h3>Progress Presentation I</h3>
-                        <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
-                        <p><strong>Marks Allocated : </strong>15</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 12%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                        </li>
+
+                        <!-- Progress Presentation I -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">November 2023</p>
+                            <h3>Progress Presentation I</h3>
+                            <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or inconsistencies in the design/requirements.</p>
+                            <p><strong>Marks Allocated : </strong>15</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 12%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                    <!-- Research Paper -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">July 2021</p>
-                        <h3>Research Paper</h3>
-                        <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p>
-                        <p><strong>Marks Allocated : </strong>10</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                        </li>
+
+                        <!-- Research Paper -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">04 March 2024</p>
+                            <h3>Research Paper</h3>
+                            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred in making new knowledge</p>
+                            <p><strong>Marks Allocated : </strong>10</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                    <!-- Progress Presentation II -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">September 2021</p>
-                        <h3>Progress Presentation II</h3>
-                        <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.</p>
-                        <p><strong>Marks Allocated : </strong>18</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 18%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">18%</div>
+                        </li>
+
+                        <!-- Progress Presentation II -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">18 March 2024</p>
+                            <h3>Progress Presentation II</h3>
+                            <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with a Poster presesntation which describes the project as a whole.</p>
+                            <p><strong>Marks Allocated : </strong>18</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 18%" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">18%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                    <!-- Website -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">October 2021</p>
-                        <h3>Website Assessment</h3>
-                        <p>The Website helps to promote our research project and reveals all details related to the project.</p>
-                        <p><strong>Marks Allocated : </strong>2</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">2%</div>
+                        </li>
+
+                        <!-- Website -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">14 June 2024</p>
+                            <h3>Website Assessment</h3>
+                            <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                            <p><strong>Marks Allocated : </strong>2</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">2%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                    <!-- Logbook -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">November 2021</p>
-                        <h3>Logbook</h3>
-                        <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
-                        <p><strong>Marks Allocated : </strong>4</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 4%" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">4%</div>
+                        </li>
+
+                        <!-- Logbook -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">28 June 2024</p>
+                            <h3>Logbook</h3>
+                            <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.</p>
+                            <p><strong>Marks Allocated : </strong>4</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 4%" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">4%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                    <!-- Final Report -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">November 2021</p>
-                        <h3>Final Report</h3>
-                        <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
-                        <p><strong>Marks Allocated : </strong>19</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 61%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 19%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">19%</div>
+                        </li>
+
+                        <!-- Final Report -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">5th April 2024</p>
+                            <h3>Final Report</h3>
+                            <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes marks for Individual & group reports and also Final report.</p>
+                            <p><strong>Marks Allocated : </strong>19</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 61%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 19%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">19%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                    <!-- Viva -->
-                    <li class="timeline-event">
-                      <label class="timeline-event-icon"></label>
-                      <div class="timeline-event-copy">
-                        <p class="timeline-event-thumbnail">November  2021</p>
-                        <h3>Final Presentation & Viva</h3>
-                        <p>Viva is held individually to assess each members contribution to the project.</p>
-                        <p><strong>Marks Allocated : </strong>20</p>
-                        <div class="progress">
-                          <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                          <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">20%</div>
+                        </li>
+
+                        <!-- Viva -->
+                        <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">20th May 2024</p>
+                            <h3>Final Presentation & Viva</h3>
+                            <p>Viva is held individually to assess each members contribution to the project.</p>
+                            <p><strong>Marks Allocated : </strong>20</p>
+                            <div class="progress">
+                            <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">20%</div>
+                            </div>
                         </div>
-                      </div>
-                    </li>
-                  </ul>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-      </section>
+        </section>
 
         <!-- Documents -->
-        <div class="container-fluid feature overflow-hidden">
+        <div class="container-fluid feature overflow-hidden"   id="documents">
             <div class="container py-5">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
                     <h1 class="mb-1 text-primary">Documents</h4>
@@ -500,7 +532,7 @@
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">TAF</a></h5>
+                                    <h5 class="card-title">TAF</h5>
                                     <a class="btn btn-primary mt-3" href="https://drive.google.com/file/d/1M3aPwA7tdcUjs20ZZ6MhgoDogC_J4IX7/view?usp=drive_link">Download</a>
                                 </div>
                             </div>
@@ -513,7 +545,7 @@
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Project Proposal</a></h5>
+                                    <h5 class="card-title">Project Proposal</h5>
                                     <a class="btn btn-primary mt-3" href="https://drive.google.com/drive/folders/1VYJm7ccyy1UAbOhfFJvcOKtuOOUYATAJ?usp=drive_link">Download</a>
                                 </div>
                             </div>
@@ -526,7 +558,7 @@
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Status Document 1</a></h5>
+                                    <h5 class="card-title">Status Document 1</h5>
                                     <a class="btn btn-primary mt-3" href="https://drive.google.com/drive/folders/1e-3Hr3iIee42LhG-3xmVTw4S2I3GMzHx?usp=drive_link">Download</a>
                                 </div>
                             </div>
@@ -539,7 +571,7 @@
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Status Document 2</a></h5>
+                                    <h5 class="card-title">Status Document 2</h5>
                                     <a class="btn btn-primary mt-3" href="https://drive.google.com/drive/folders/1mJ0KC-qSX-66iqH_9Sohf4gv57kVccDN?usp=drive_link">Download</a>
                                 </div>
                             </div>
@@ -552,7 +584,7 @@
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Final Report</a></h5>
+                                    <h5 class="card-title">Final Report</h5>
                                     <a class="btn btn-primary mt-3" href="https://drive.google.com/drive/folders/1tVzzZuSKlbNA0mzRPRkzuusewPe8LIgh?usp=drive_link">Download</a>
                                 </div>
                             </div>
@@ -565,165 +597,167 @@
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Research Paper</a></h5>
+                                    <h5 class="card-title">Research Paper</h5>
                                     <a class="btn btn-primary mt-3" href="https://drive.google.com/file/d/1D74YtSWv2VbnVaLKtuyOFaBWkDWQ5nPZ/view?usp=drive_link">Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>               
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                </div> 
+            <!-- Documents End-->    
+
+
+            <!-- Presenatations-->    
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px; margin-top: 100px;"  id="presentations">
                     <h1 class="mb-1 text-primary">Presentations</h1>
-                </div>
+            </div>
                 <div class="row g-4 justify-content-center text-center mb-5">
-                    <!-- Document 1 -->
+                    <!-- Presentation 1 -->
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file-powerpoint fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Project Proposal </a></h5>
+                                    <h5 class="card-title">Project Proposal</h5>
                                     <a class="btn btn-primary mt-3" href="https://docs.google.com/presentation/d/1U544Dwa682o87AKjRD96SrW8YkBQc2JY/edit?usp=drive_link&ouid=113169874384965958659&rtpof=true&sd=true">Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 
-                    <!-- Document 2 -->
+                    <!-- Presentation 2 -->
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file-powerpoint fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Progress Presentation 1 </a></h5>
+                                    <h5 class="card-title">Progress Presentation 1</h5>
                                     <a class="btn btn-primary mt-3" href="https://docs.google.com/presentation/d/1Wy_aHEocigTCQuJHIbLUzpXBRo9t8uzP/edit?usp=drive_link&ouid=113169874384965958659&rtpof=true&sd=true">Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 
-                    <!-- Document 3 -->
+                    <!-- Presentation 3 -->
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file-powerpoint fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Progress Presentation 2</a></h5>
+                                    <h5 class="card-title">Progress Presentation 2</h5>
                                     <a class="btn btn-primary mt-3" href="https://docs.google.com/presentation/d/1OJ0hVCIU7o-3pi5QmLXcbCfypnQ-bFjL/edit?usp=drive_link&ouid=113169874384965958659&rtpof=true&sd=true">Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 
-                    <!-- Document 4 -->
+                    <!-- Presentation 4 -->
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="card h-100 border-0 shadow">
                             <div class="card-body">
                                 <div class="d-inline-block rounded bg-light p-4 mb-4"><i class="fas fa-file-powerpoint fa-5x text-secondary"></i></div>
                                 <div class="feature-content">
-                                    <h5 class="card-title"><a href="#">Final Presentation</a></h5>
+                                    <h5 class="card-title">Final Presentation</h5>
                                     <a class="btn btn-primary mt-3" href="https://docs.google.com/presentation/d/1qC7ppu7kFllMjL_z7d6CCyfJQxeMyzpx/edit?usp=drive_link&ouid=113169874384965958659&rtpof=true&sd=true">Download</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="row g-5 pt-5" style="margin-top: 6rem;">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <div class="feature-img RotateMoveLeft h-100" style="object-fit: cover;">
-                            <img src="img/features-1.png" class="img-fluid w-100 h-100" alt="">
-                        </div>
+                </div> 
+            <!-- Presenatations End-->       
+
+
+            <!-- Technologies Used -->
+            <div class="row g-5 pt-5" id="technologies">
+             <div id="tech_used" class="sub-section">
+                <h2 class="mb-1 text-primary" style="text-align: center;">Technologies Used</h2>
+                <div class="row technology mt-5">
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/python.png" alt="Python">
                     </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
-                        <h4 class="text-primary">Tools and technologies</h4> <br>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/python.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">Python</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/react.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">React</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/tensorflow.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">Tensorflow</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/keras.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">Keras</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/mysql.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">MySQL</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/php.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">PHP</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/doker.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">Docker</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex">
-                                    <img src="img/jwt.png" width="50px" alt="">
-                                    <div class="d-flex flex-column ms-3">
-                                        <h2 class="mb-0 fw-bold">JWT</h2>
-                                        <!-- <small class="text-dark">Created Projects</small> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <p>Python</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/react.png" alt="React">
                     </div>
+                    <p>React</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/tensorflow.png" alt="Python">
+                    </div>
+                    <p>Tensorflow</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/keras.png" alt="Keras">
+                    </div>
+                    <p>Keras</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/mysql.png" alt="MySQL">
+                    </div>
+                    <p>MySQL</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/flask.png" alt="Firebase">
+                    </div>
+                    <p>Flask</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/googlecloud.png" alt="Google Cloud">
+                    </div>
+                    <p>Google Cloud</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/php.png" alt="Kafka">
+                    </div>
+                    <p>PHP</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/doker.png" alt="Doker">
+                    </div>
+                    <p>Doker</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/colab.png" alt="Google Colab">
+                    </div>
+                    <p>Google Colab</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/googlemap.png" alt="Google map API">
+                    </div>
+                    <p>Google map API</p>
+                  </div>
+                  <div class="col-md-2 col-sm-4 col-6 mb-5">
+                    <div class="avatar">
+                      <img src="img/tech/jwt.png" alt="Jwt">
+                    </div>
+                    <p>Jwt</p>
+                  </div>
                 </div>
+            <!-- Technologies Used End-->
+             </div>
             </div>
         </div>
-        <!-- Feature End -->
+    </div>
 
 
-        <!-- Blog Start -->
+        <!-- About Us Start -->
         <section id="about" class="main-sections " style="background-color:#FDFEFE">
             <div class="container">
-                <h5 class="section-headings">About Us</h5>
+                <h5 class="section-headings" style="text-align: center;">About Us</h5>
                 <div class="sub-section about-us-container ">
-                    <h2>Meet Our Team !</h2>
+                    <h2 style="text-align: center;">Meet Our Team !</h2>
                     <div class="row mt-sm-5">
                         <!-- Supervisor -->
                         <div class="col-lg-3 col-md-4 col-sm-12">
@@ -894,87 +928,63 @@
                 </div>
             </div>
           </section>
-        <!-- Blog End -->
+        <!-- About us End -->
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-dark mb-4">Company</h4>
-                            <a href=""> Why Mailler?</a>
-                            <a href=""> Our Features</a>
-                            <a href=""> Our Portfolio</a>
-                            <a href=""> About Us</a>
-                            <a href=""> Our Blog & News</a>
-                            <a href=""> Get In Touch</a>
-                        </div>
+              <!-- Contact Us -->
+      <section id="contact" class="main-sections" style="background-color:#FDFEFE">
+        <div class="container">
+            <h5 class="section-headings">Contact Us</h5>
+            <div class="sub-section">
+                <h2>Get in Touch</h2>
+                <div class="row  mt-sm-5">
+                  <div class="col-md-6 col-sm-12 contact-form">
+                    <form action="MAILTO:researchcoco@gmail.com" method="POST" enctype="text/plain">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message or Query</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                      </div>
+                      <button type="submit" class="btn btncolorgradient	">Submit</button>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-sm-12 contact-details">
+                    <div>
+                      <p><strong>Contact Details</strong></p>
+                      <p>For further queries please reach us at <a href="mailto: riouml@gmail.com">riouml@gmail.com</a></p>
+                      <p>Hope this project helped you in some manner. Thank you!</p>
+                      <p>-Team RIO_UML	</p>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-dark">Quick Links</h4>
-                            <a href=""> About Us</a>
-                            <a href=""> Contact Us</a>
-                            <a href=""> Privacy Policy</a>
-                            <a href=""> Terms & Conditions</a>
-                            <a href=""> Our Blog & News</a>
-                            <a href=""> Our Team</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-dark">Services</h4>
-                            <a href=""> All Services</a>
-                            <a href=""> Promotional Emails</a>
-                            <a href=""> Product Updates</a>
-                            <a href=""> Email Marketing</a>
-                            <a href=""> Acquistion Emails</a>
-                            <a href=""> Retention Emails</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-dark">Contact Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+      </section>
 
-        
+
         <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
+        <div class="container-fluid copyright py-4" style="margin-top: 40px;">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>RIO UML</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By <a class="border-bottom" href="https://riouml.com">RIO UML Team</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Copyright End -->
 
-
+        
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
